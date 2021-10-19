@@ -111,6 +111,7 @@
 .mng_title {
   font-size: 32px;
   font-weight: 500;
+  padding-top: 15px;
 }
 .mbr_message {
   padding: 20px 0px;
@@ -118,5 +119,211 @@
   font-weight: 400;
 }
 .mbr_msg_para {
+  font-size: 20px;
+  line-height: 34px;
 }
 /* <!-- managment_desk --> */
+
+/* <!-- gallery --> */
+.gallery_container {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.gallery_title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.gallery_title span,
+.co-curclm_title span,
+.wlcm_title span {
+  background: #f7f79e;
+  padding: 0px 20px;
+}
+.simple-gallery-wrapper {
+  display: block;
+}
+
+.simple-gallery {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  display: block;
+  margin: 0 auto !important;
+}
+
+.simple-gallery .controlls {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 999;
+}
+.simple-gallery .controlls.prev {
+  left: 0px;
+}
+.simple-gallery .controlls.next {
+  right: 0px;
+}
+.simple-gallery .controlls button {
+  position: relative;
+  top: calc(50% - 25px);
+
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  margin: 5px;
+
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: 0px;
+
+  font-size: 20px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.simple-gallery .pager {
+  position: absolute;
+  bottom: 10px;
+  z-index: 999;
+  display: block;
+  width: 100%;
+}
+
+.simple-gallery .pager ul {
+  list-style: none;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.simple-gallery .pager ul li {
+  display: inline-block;
+}
+
+.simple-gallery .pager ul li button,
+.simple-gallery .pager ul li button:focus {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 0px;
+  margin: 5px 10px;
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: 0px;
+}
+
+.simple-gallery .pager ul li.active button {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.simple-gallery img {
+  width: 100%;
+  /*max-width: 800px;*/
+  margin: 0px auto;
+}
+
+.simple-gallery ul.slides {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.simple-gallery ul.slides li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.simple-gallery ul.slides li.skeleton {
+  position: relative;
+  width: 100%;
+  max-height: 800px;
+  visibility: hidden;
+  font-size: 0px;
+  line-height: 0;
+}
+
+.simple-gallery ul.slides li.active {
+  z-index: 100;
+  opacity: 1;
+  transition: all 1s ease-in;
+}
+.pager,
+.pager ul {
+  display: none;
+}
+.controlls.prev,
+.controlls.next,
+.slides {
+  background: #f7f79e;
+}
+
+/* <!-- gallery --> */
+
+/* <!-- co-curricular  activities --> */
+.co-curclm_acty_container {
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.co-curclm_acty_section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.co-curclm_title {
+  padding: 20px 0px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.curclm_card {
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.unit_img {
+  width: 30%;
+  height: 20%;
+  padding-top: 10px;
+}
+.unit_name {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.background {
+  position: relative;
+  z-index: 1;
+}
+.background:before {
+  border-top: 1px solid #7b2452;
+  content: "";
+  margin: 0 auto; /* this centers the line to the full width specified */
+  position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 35%;
+  z-index: -1;
+}
